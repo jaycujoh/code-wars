@@ -7,7 +7,6 @@
 
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
-
 function arrayDiff(a, b) {
   
     // go through list 'a' using .filter

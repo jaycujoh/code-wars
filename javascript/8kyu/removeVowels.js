@@ -1,15 +1,25 @@
+// Trolls are attacking your comment section!
+
+// A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+// Note: for this kata y isn't considered a vowel.
+
 function disemvowel(str) {
   
     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
-    // Start with an empty string to store the result
+    // start with an empty string to store the result
     let noVowels = '';
 
-    // Loop through each character in the string
+    // loop through each character in the string
     for (let i = 0; i < str.length; i++) {
-        // Check if the character is NOT a vowel
+        // check if the character is NOT a vowel
         if (!vowels.includes(str[i])) { 
-            // Add the character to the result if it's not a vowel
+            // add the character to the result if it's not a vowel
             noVowels += str[i]; 
         }
     }

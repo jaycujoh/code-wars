@@ -16,13 +16,11 @@ function maskify(cc) {
 
     let masked = '';
     let maskedEnd = cc.slice(-4);
-
+    
     for (i = 0; i < cc.length-4; i++) {
         masked += '#';
     }
-
     return masked + maskedEnd;
-
     }
 
   let input = '123456789 hello i am batman'

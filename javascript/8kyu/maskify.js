@@ -14,15 +14,11 @@
 
 function maskify(cc) {
 
-    let masked = ''
-    let maskedEnd = ''
+    let masked = '';
+    let maskedEnd = cc.slice(-4);
 
     for (i = 0; i < cc.length-4; i++) {
         masked += '#';
-    }
-
-    for (i = 0; i < cc.length; i++) {
-        maskedEnd = cc.slice(-4);
     }
 
     return masked + maskedEnd;

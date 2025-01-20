@@ -30,7 +30,7 @@ function findOdd(A) {
         //if count is not divisible by 2 (odd)
         if (c[num] % 2 !== 0) {
             //return num
-            return num;
+            return Number(num);
         }
     }
   }

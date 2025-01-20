@@ -19,7 +19,7 @@ function findOdd(A) {
     //object where the keys are the numbers, and the values are how many times each number appears
     const c = {}; 
     // counting the frequency of each unique number in the array 
-             //num is the current element in the array
+             //num is the current element index in the array
     A.forEach(num => {
         //if c @ num = 0 then do nothing + 1
             // if c @ num = 1 then 1 + 1

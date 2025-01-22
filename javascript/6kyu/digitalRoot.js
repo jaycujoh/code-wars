@@ -11,15 +11,12 @@
 function digitalRoot(n) {
 
     let numArray = n.toString().split('').map(Number);
-
-    //debug
-    console.log(numArray);
-
     let sum = 0;
-
     for (i = 0; i < numArray.length; i++) {
         sum = (sum + numArray[i]);
-    } if (sum > 9) {
+    } 
+    
+    while (sum > 9) {
         numArray = sum.toString().split('').map(Number);
         sum = 0;
         for (j = 0; j < numArray.length; j++) {
@@ -29,5 +26,5 @@ function digitalRoot(n) {
     return sum;
 }
 
-  digitalNumber = 132189;
+  digitalNumber = 804376;
   console.log(digitalRoot(digitalNumber));
